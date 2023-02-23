@@ -1,0 +1,118 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);}
+    *{
+      margin:0;
+      padding:0;
+    }
+    body{
+      background-color: hsl(30, 38%, 92%);
+      
+    }
+    .container{
+        width:600px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius:10px;
+        overflow: hidden;
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+    .right{
+        padding:25px;
+        width:600px;
+    }
+    .text{
+        padding:  20px;
+    }
+    .perf{
+        font-family: 'Montserrat', sans-serif;
+      text-transform:uppercase;
+      letter-spacing: 5px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .title{
+      line-height: 100%;
+      font-size: 36px;
+      font-family: 'Fraunces', serif;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    .description{
+      font-family: 'Montserrat', sans-serif;
+      margin: 30px 30px 0 0;
+      line-height: 150%;
+      font-size: 14px;
+    }
+   .opacity{
+     opacity: 0.5;
+    }
+    .prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .price-green{
+      font-size: 36px;
+      color:hsl(158, 36%, 37%);
+      font-family: 'Fraunces', serif;
+      margin-top: 20px;
+    }
+    .price-crossed{
+      margin-left: 20px;
+      margin-top: 20px;
+      text-decoration: Line-through;
+    }
+    
+    .cart{
+      transform: translateX(-10px);
+    }
+
+    button{
+        width:45%;
+        height:50px;
+        position: absolute;        
+        border-radius: 10px;
+        background-color: hsl(158, 36%, 40%);
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+        border:none;
+    }
+    @media (max-width: 376px){
+        .container{
+            width:80%;
+            height: 650px;
+            flex-direction: column;
+        }
+        .right{
+            padding:15px;
+            width:90%;
+            height: 420px;
+        }
+        button{
+            width:87%;
+        }
+}
+    @media (min-width:376px) and (max-width:600px){
+        .container{
+            flex-direction: column;
+            width: 80%;
+            height: 700px;
+        }
+        .right{
+            padding:15px;
+            width: 95%;
+            height: 100%;
+        }
+        button{
+            width:95%;
+        }
+    }
