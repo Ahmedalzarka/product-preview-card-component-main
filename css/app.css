@@ -105,14 +105,14 @@
         .container{
             flex-direction: column;
             width: 80%;
-            height: 700px;
+            height: 33%;
         }
         .right{
             padding:15px;
-            width: 95%;
+            width: 92%;
             height: 100%;
         }
         button{
-            width:95%;
+            width:92%;
         }
     }
